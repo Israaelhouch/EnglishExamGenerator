@@ -35,7 +35,7 @@ def generate_expressions(word: str):
 def adjust_ex4(text):
 
    keyword_lines = re.findall(r'-\s*.*\(paragraph \d+\)', text)
-   print("***ORIGINAL words***:", keyword_lines)
+   #print("***ORIGINAL words***:", keyword_lines)
    dotted_line = "." * 20
 
    result = "4. Find in the text words meaning:\n"

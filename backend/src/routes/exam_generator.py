@@ -9,12 +9,12 @@ from backend.src.routes.utils import generate_response, generate_questions, orag
 
 BASE_DIR = Path(__file__).resolve().parent
 
-CHROMA_PATH_COMPREHENSION_1 = str(BASE_DIR / "exam_generator/backend/db_store/db_comprehension_1_store")
-CHROMA_PATH_COMPREHENSION_2 = str(BASE_DIR / "exam_generator/backend/db_store/db_comprehension_2_store")
-CHROMA_PATH_LANGUAGE_EX1 = str(BASE_DIR / "exam_generator/backend/db_language_ex1")
-CHROMA_PATH_LANGUAGE_EX2 = str(BASE_DIR / "exam_generator/backend/db_store/db_language_ex2")
-CHROMA_PATH_WRITING_EX1 = str(BASE_DIR / "exam_generator/backend/db_store/db_ex1")
-CHROMA_PATH_WRITING_EX2 = str(BASE_DIR / "exam_generator/backend/db_store/db_ex2")
+CHROMA_PATH_COMPREHENSION_1 = str(BASE_DIR / "exam_generator/backend/src/routes/db_store/db_comprehension_1_store")
+CHROMA_PATH_COMPREHENSION_2 = str(BASE_DIR / "exam_generator/backend/src/routes/db_store/db_comprehension_2_store")
+CHROMA_PATH_LANGUAGE_EX1 = str(BASE_DIR / "exam_generator/backend/src/routes/db_store/db_language_ex1")
+CHROMA_PATH_LANGUAGE_EX2 = str(BASE_DIR / "exam_generator/backend/src/routes/db_store/db_language_ex2")
+CHROMA_PATH_WRITING_EX1 = str(BASE_DIR / "exam_generator/backend/src/routes/db_store/db_writing_ex1")
+CHROMA_PATH_WRITING_EX2 = str(BASE_DIR / "exam_generator/backend/src/routes/db_store/db_writing_ex2")
 
 
 topics = {
