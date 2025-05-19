@@ -8,20 +8,29 @@ This project is a backend application for generating exams using Python. It incl
 
 ```
 EXAM_GENERATOR/
-├── backend/                # Contains data and DB-related files
-│   ├── data/               # Raw or intermediate data
-├── src/routes/            # Route logic for the FastAPI app
-│   ├── db_store/          # DB files
-│   ├── exam_generator.py  # Main logic for generating exams
-│   ├── modify_outputs.py  # Functions to clean/modify comprehension output
-│   ├── templates.py       # Template handling for exams
-│   └── utils.py           # Helper functions
-├── env/                   # Virtual environment directory
+├── backend/         # Contains data and DB-related files
+│ └── data/          # intermediate data
+├── src/
+│ ├── routes/        # Route logic for the FastAPI app
+│ │ ├── dependencies.py            # Dependency injection for routes
+│ │ ├── generate_exam.py           # Logic for generating exam
+│ │ └── get_history.py             # Logic to fetch exam history
+│ ├── utils/
+│ │ ├── comprehension/             # Comprehension logic and templates
+│ │ │ ├── db_comprehension_1_store/       # DB files for comprehension ex 1
+│ │ │ ├── db_comprehension_2_store/       # DB files for comprehension ex 2
+│ │ │ ├── comprehension_templates.py      # Templates for comprehension
+│ │ │ ├── generate_comprehension.py       # Logic to generate comprehension Qs
+│ │ │ └── modify_outputs.py               # Clean/modify comprehension outputs
+│ │ └── language/
+│ │ └── writing/
+│ │ ├── full_exam_generator.py      # Generates full exams
+│ │ ├── generation_fuctions.py      # Generation helper functions
+│ │ └── mongo.py                    # MongoDB utility functions
+├── env/              # Virtual environment directory
 ├── main.py                # Entry point for the FastAPI app
-├── test.py                # Testing script 
+├── requirements.txt          # Python dependencies
 ├── Makefile               # Commands to build, run, and clean
-├── requirements.txt       # Python dependencies
-├── .env                   # Environment variables file
 └── .gitignore             # Git ignored files list
 ```
 
